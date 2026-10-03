@@ -30,6 +30,9 @@ técnico.
 - Visual Studio Code;
 - Git e GitHub.
 
+Link do Github Pages: 
+https://brunahenz.github.io/dw1-n1-central-servicos-rede
+
 ## Estrutura do projeto
 
 ```text
