@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Abrir chamado - Central de Atendimento</title>
+
+    <link
+      rel="stylesheet"
+      href="./assets/css/reset.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./assets/css/global.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./assets/css/abrir-chamado.css"
+    />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <div class="cabecalho-conteudo">
+          <div class="marca">
+            <h1>Central de Atendimento</h1>
+            <p>Suporte técnico e serviços</p>
+          </div>
+
+          <nav
+            class="navegacao"
+            aria-label="Navegação principal"
+          >
+            <ul>
+              <li>
+                <a href="./index.html">
+                  Início
+                </a>
+              </li>
+
+              <li>
+                <a href="./chamados.html">
+                  Chamados
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="./abrir-chamado.html"
+                  class="pagina-atual"
+                >
+                  Abrir chamado
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="formulario-pagina">
+        <div class="container">
+          <div class="titulo-pagina">
+            <p class="etiqueta">NOVO ATENDIMENTO</p>
+
+            <h2>Abra um chamado</h2>
+
+            <p>
+              Preencha os dados abaixo para solicitar
+              atendimento da equipe de suporte.
+            </p>
+          </div>
+
+          <form
+            class="formulario-chamado"
+            action="#"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <fieldset>
+              <legend>Dados do solicitante</legend>
+
+              <div class="grade-campos">
+                <div class="campo">
+                  <label for="nome">
+                    Nome completo
+                  </label>
+
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    required
+                    minlength="3"
+                    maxlength="100"
+                    placeholder="Digite seu nome completo"
+                  />
+                </div>
+
+                <div class="campo">
+                  <label for="email">
+                    E-mail
+                  </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="exemplo@email.com"
+                  />
+                </div>
+
+                <div class="campo">
+                  <label for="telefone">
+                    Telefone
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    required
+                    minlength="10"
+                    maxlength="15"
+                    placeholder="(47) 99999-9999"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Informações do chamado</legend>
+
+              <div class="grade-campos">
+                <div class="campo">
+                  <label for="ocorrencia">
+                    Data e hora da ocorrência
+                  </label>
+
+                  <input
+                    type="datetime-local"
+                    id="ocorrencia"
+                    name="ocorrencia"
+                    required
+                  />
+                </div>
+
+                <div class="campo">
+                  <label for="categoria">
+                    Categoria
+                  </label>
+
+                  <select
+                    id="categoria"
+                    name="categoria"
+                    required
+                  >
+                    <option value="">
+                      Selecione uma categoria
+                    </option>
+
+                    <option value="equipamentos">
+                      Equipamentos
+                    </option>
+
+                    <option value="rede">
+                      Rede e internet
+                    </option>
+
+                    <option value="sistemas">
+                      Sistemas
+                    </option>
+
+                    <option value="acessos">
+                      Contas e acessos
+                    </option>
+                  </select>
+                </div>
+
+                <div class="campo">
+                  <label for="prioridade">
+                    Prioridade
+                  </label>
+
+                  <select
+                    id="prioridade"
+                    name="prioridade"
+                    required
+                  >
+                    <option value="">
+                      Selecione uma prioridade
+                    </option>
+
+                    <option value="baixa">
+                      Baixa
+                    </option>
+
+                    <option value="media">
+                      Média
+                    </option>
+
+                    <option value="alta">
+                      Alta
+                    </option>
+
+                    <option value="urgente">
+                      Urgente
+                    </option>
+                  </select>
+                </div>
+
+                <div class="campo campo-completo">
+                  <label for="descricao">
+                    Descrição do problema
+                  </label>
+
+                  <textarea
+                    id="descricao"
+                    name="descricao"
+                    required
+                    minlength="10"
+                    maxlength="1000"
+                    rows="6"
+                    placeholder="Descreva o problema encontrado..."
+                  ></textarea>
+                </div>
+
+                <div class="campo campo-completo">
+                  <label for="afetados">
+                    Equipamentos ou serviços afetados
+                  </label>
+
+                  <textarea
+                    id="afetados"
+                    name="afetados"
+                    maxlength="500"
+                    rows="4"
+                    placeholder="Informe os equipamentos ou serviços afetados."
+                  ></textarea>
+                </div>
+
+                <div class="campo campo-completo">
+                  <label for="arquivo">
+                    Anexo
+                  </label>
+
+                  <input
+                    type="file"
+                    id="arquivo"
+                    name="arquivo"
+                    accept=".jpg,.jpeg,.png,.pdf"
+                  />
+
+                  <small>
+                    Formatos aceitos: JPG, PNG e PDF.
+                  </small>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="confirmacao">
+              <legend>Confirmação</legend>
+
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="confirmacao"
+                  name="confirmacao"
+                  required
+                />
+
+                <label for="confirmacao">
+                  Confirmo que as informações preenchidas
+                  estão corretas.
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="acoes-formulario">
+              <button
+                type="reset"
+                class="botao-secundario"
+              >
+                Limpar formulário
+              </button>
+
+              <button
+                type="submit"
+                class="botao-principal"
+              >
+                Enviar chamado
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <p>
+          Projeto desenvolvido para a disciplina de
+          Desenvolvimento Web I.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

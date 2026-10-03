@@ -1,0 +1,165 @@
+.formulario-pagina {
+  padding: 3rem 0 4rem;
+}
+
+.titulo-pagina {
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.titulo-pagina h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+}
+
+.titulo-pagina p:last-child {
+  color: var(--cinza);
+}
+
+.formulario-chamado {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 0.7rem;
+}
+
+.formulario-chamado fieldset {
+  margin: 0 0 2rem;
+  padding: 1.5rem;
+  border: 1px solid var(--borda);
+  border-radius: 0.5rem;
+}
+
+.formulario-chamado legend {
+  padding: 0 0.5rem;
+  color: var(--primaria);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.grade-campos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.campo {
+  flex: 1 1 250px;
+}
+
+.campo-completo {
+  flex-basis: 100%;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 0.75rem;
+  color: var(--texto);
+  background-color: var(--branco);
+  border: 1px solid #cbd5e1;
+  border-radius: 0.4rem;
+}
+
+.campo textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: 2px solid #c4b5fd;
+  border-color: var(--primaria);
+}
+
+.campo small {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--cinza);
+  font-size: 0.8rem;
+}
+
+.confirmacao {
+  margin-bottom: 1.5rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.checkbox input {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.2rem;
+}
+
+.checkbox label {
+  cursor: pointer;
+}
+
+.acoes-formulario {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.acoes-formulario button {
+  padding: 0.8rem 1.3rem;
+  border: 0;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botao-secundario {
+  color: #334155;
+  background-color: #e2e8f0;
+}
+
+.botao-secundario:hover {
+  background-color: #cbd5e1;
+}
+
+@media (max-width: 700px) {
+  .formulario-pagina {
+    padding: 2rem 0;
+  }
+
+  .formulario-chamado {
+    padding: 1rem;
+  }
+
+  .formulario-chamado fieldset {
+    padding: 1rem;
+  }
+
+  .grade-campos {
+    flex-direction: column;
+  }
+
+  .campo,
+  .campo-completo {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .acoes-formulario {
+    flex-direction: column-reverse;
+  }
+
+  .acoes-formulario button {
+    width: 100%;
+  }
+}

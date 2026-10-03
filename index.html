@@ -6,29 +6,216 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Projeto HTML e CSS</title>
+
+    <title>Central de Atendimento</title>
+
     <link
       rel="stylesheet"
-      href="./css/reset.css"
+      href="./assets/css/reset.css"
     />
 
     <link
       rel="stylesheet"
-      href="./css/global.css"
+      href="./assets/css/global.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./assets/css/index.css"
     />
   </head>
 
   <body>
-    <header>
-      <h1>Projeto HTML e CSS</h1>
+    <header class="cabecalho">
+      <div class="container">
+        <div class="cabecalho-conteudo">
+          <div class="marca">
+            <h1>Central de Atendimento</h1>
+            <p>Suporte técnico e serviços</p>
+          </div>
+
+          <nav
+            class="navegacao"
+            aria-label="Navegação principal"
+          >
+            <ul>
+              <li>
+                <a
+                  href="./index.html"
+                  class="pagina-atual"
+                >
+                  Início
+                </a>
+              </li>
+
+              <li>
+                <a href="./chamados.html">
+                  Chamados
+                </a>
+              </li>
+
+              <li>
+                <a href="./abrir-chamado.html">
+                  Abrir chamado
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <main>
-      <p>Substitua este conteúdo pelo conteúdo do seu projeto.</p>
+      <section class="destaque">
+        <div class="container">
+          <div class="destaque-conteudo">
+            <p class="etiqueta">
+              SUPORTE AO USUÁRIO
+            </p>
+
+            <h2>
+              Precisa de ajuda com tecnologia?
+            </h2>
+
+            <p>
+              Encontre informações sobre os serviços
+              disponíveis ou registre seu problema para que
+              nossa equipe possa ajudar.
+            </p>
+
+            <a
+              href="./abrir-chamado.html"
+              class="botao-principal"
+            >
+              Abrir um chamado
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="servicos">
+        <div class="container">
+          <div class="cabecalho-secao">
+            <p class="etiqueta">
+              NOSSOS SERVIÇOS
+            </p>
+
+            <h2>Como podemos ajudar?</h2>
+
+            <p>
+              Escolha uma das opções abaixo para encontrar
+              o suporte necessário.
+            </p>
+          </div>
+
+          <div class="lista-servicos">
+            <article class="servico">
+              <img
+                src="./assets/img/comp-atendimento.png"
+                alt=""
+              />
+
+              <div class="servico-conteudo">
+                <span class="categoria">
+                  Equipamentos
+                </span>
+
+                <h3>Computadores</h3>
+
+                <p>
+                  Problemas com computadores, monitores,
+                  teclados e outros equipamentos.
+                </p>
+
+                <a href="./abrir-chamado.html">
+                  Abrir chamado →
+                </a>
+              </div>
+            </article>
+
+            <article class="servico">
+              <img
+                src="./assets/img/equip-redes.png"
+                alt=""
+              />
+
+              <div class="servico-conteudo">
+                <span class="categoria">
+                  Conectividade
+                </span>
+
+                <h3>Rede e internet</h3>
+
+                <p>
+                  Atendimento para problemas de conexão,
+                  internet e acesso à rede.
+                </p>
+
+                <a href="./abrir-chamado.html">
+                  Abrir chamado →
+                </a>
+              </div>
+            </article>
+
+            <article class="servico">
+              <img
+                src="./assets/img/processamento-de-dados.jpg"
+                alt=""
+              />
+
+              <div class="servico-conteudo">
+                <span class="categoria">
+                  Sistemas
+                </span>
+
+                <h3>Programas e sistemas</h3>
+
+                <p>
+                  Ajuda com instalação, configuração e
+                  problemas em programas.
+                </p>
+
+                <a href="./abrir-chamado.html">
+                  Abrir chamado →
+                </a>
+              </div>
+            </article>
+
+            <article class="servico">
+              <img
+                src="./assets/img/acesso-usuario.jpg"
+                alt=""
+              />
+
+              <div class="servico-conteudo">
+                <span class="categoria">
+                  Usuários
+                </span>
+
+                <h3>Contas e senhas</h3>
+
+                <p>
+                  Problemas relacionados a contas, senhas e
+                  permissões de acesso.
+                </p>
+
+                <a href="./abrir-chamado.html">
+                  Abrir chamado →
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <p>Desenvolvido durante as aulas de Desenvolvimento Web.</p>
+    <footer class="rodape">
+      <div class="container">
+        <p>
+          Projeto desenvolvido para a disciplina de
+          Desenvolvimento Web I.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

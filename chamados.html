@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Chamados - Central de Atendimento</title>
+
+    <link
+      rel="stylesheet"
+      href="./assets/css/reset.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./assets/css/global.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./assets/css/chamados.css"
+    />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <div class="cabecalho-conteudo">
+          <div class="marca">
+            <h1>Central de Atendimento</h1>
+            <p>Suporte técnico e serviços</p>
+          </div>
+
+          <nav
+            class="navegacao"
+            aria-label="Navegação principal"
+          >
+            <ul>
+              <li>
+                <a href="./index.html">
+                  Início
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="./chamados.html"
+                  class="pagina-atual"
+                >
+                  Chamados
+                </a>
+              </li>
+
+              <li>
+                <a href="./abrir-chamado.html">
+                  Abrir chamado
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="chamados-pagina">
+        <div class="container">
+          <div class="titulo-pagina">
+            <p class="etiqueta">ATENDIMENTO</p>
+
+            <h2>Chamados de suporte</h2>
+
+            <p>
+              Consulte os chamados registrados e acompanhe
+              suas respectivas situações.
+            </p>
+          </div>
+
+          <div class="acoes-chamados">
+            <div>
+              <strong>Chamados recentes</strong>
+              <p>Confira os atendimentos registrados.</p>
+            </div>
+
+            <a
+              href="./abrir-chamado.html"
+              class="botao-principal"
+            >
+              + Abrir chamado
+            </a>
+          </div>
+
+          <div class="lista-chamados">
+            <article class="chamado">
+              <div class="chamado-topo">
+                <span class="numero">
+                  #0001
+                </span>
+
+                <span class="status aberto">
+                  Aberto
+                </span>
+              </div>
+
+              <div class="chamado-conteudo">
+                <div>
+                  <span class="categoria">
+                    Rede e internet
+                  </span>
+
+                  <h3>
+                    Problema de conexão com a internet
+                  </h3>
+
+                  <p>
+                    Usuário informa que está sem acesso
+                    à internet no computador.
+                  </p>
+                </div>
+
+                <div class="informacoes">
+                  <span>
+                    Prioridade: <strong>Alta</strong>
+                  </span>
+
+                  <span>
+                    Aberto em: 01/10/2026
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="chamado">
+              <div class="chamado-topo">
+                <span class="numero">
+                  #0002
+                </span>
+
+                <span class="status andamento">
+                  Em andamento
+                </span>
+              </div>
+
+              <div class="chamado-conteudo">
+                <div>
+                  <span class="categoria">
+                    Equipamentos
+                  </span>
+
+                  <h3>
+                    Computador não liga
+                  </h3>
+
+                  <p>
+                    Computador apresenta falha ao iniciar
+                    e não exibe imagem no monitor.
+                  </p>
+                </div>
+
+                <div class="informacoes">
+                  <span>
+                    Prioridade: <strong>Urgente</strong>
+                  </span>
+
+                  <span>
+                    Aberto em: 01/10/2026
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="chamado">
+              <div class="chamado-topo">
+                <span class="numero">
+                  #0003
+                </span>
+
+                <span class="status resolvido">
+                  Resolvido
+                </span>
+              </div>
+
+              <div class="chamado-conteudo">
+                <div>
+                  <span class="categoria">
+                    Sistemas
+                  </span>
+
+                  <h3>
+                    Erro ao abrir sistema
+                  </h3>
+
+                  <p>
+                    Sistema apresentava erro durante a
+                    inicialização.
+                  </p>
+                </div>
+
+                <div class="informacoes">
+                  <span>
+                    Prioridade: <strong>Média</strong>
+                  </span>
+
+                  <span>
+                    Resolvido em: 30/09/2026
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="chamado">
+              <div class="chamado-topo">
+                <span class="numero">
+                  #0004
+                </span>
+
+                <span class="status aberto">
+                  Aberto
+                </span>
+              </div>
+
+              <div class="chamado-conteudo">
+                <div>
+                  <span class="categoria">
+                    Contas e acessos
+                  </span>
+
+                  <h3>
+                    Problema com acesso à conta
+                  </h3>
+
+                  <p>
+                    Usuário não consegue acessar sua conta
+                    utilizando a senha cadastrada.
+                  </p>
+                </div>
+
+                <div class="informacoes">
+                  <span>
+                    Prioridade: <strong>Alta</strong>
+                  </span>
+
+                  <span>
+                    Aberto em: 30/09/2026
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <p>
+          Projeto desenvolvido para a disciplina de
+          Desenvolvimento Web I.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
